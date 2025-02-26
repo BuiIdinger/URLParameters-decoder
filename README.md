@@ -9,7 +9,7 @@ URLParameters urlParameters(query);
 std::string userId = urlParameters.getParameterValue("userId");
 if (userId.empty()) {
   res->writeStatus("400 Bad Request");
-  res->end("Amount wasn't included in the URL parameters.");
+  res->end("UserID wasn't included in the URL parameters.");
   return;
 }
 
